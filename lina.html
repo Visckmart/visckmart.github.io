@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="project_details.css"/>
+    <link href='https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@95,400..800;100,400..800' rel='stylesheet'>
+    <title>Title</title>
+    <style>
+        :root {
+            --accentColor: #EDE7CA;
+        }
+    </style>
+</head>
+<body>
+<nav><a href="index.html"><h1>Victor Martins</h1></a></nav>
+<article>
+    <div class="project_header">
+        <h1>Lina</h1>
+        <h2>Diário de seu diabetes gestacional</h2>
+        <h3>Saúde</h3>
+    </div>
+
+    <p>
+        Lina é um aplicativo gratuito para pessoas com diabetes gestacional disponível para iOS que permite o registro e acompanhamento dos níveis glicêmicos de forma rápida, prática e segura.
+    </p>
+    <p>
+        É possível visualizar os registros por meio de gráficos que exibem de maneira intuitiva o resumo do período escolhido. Essa visualização pode ser compartilhada com profissionais de saúde permitindo análises mais fáceis e um melhor acompanhamento da sua gestação.
+    </p>
+
+
+    <h3>Tecnologias utilizadas</h3>
+    <p>
+        O aplicativo foi inteiramente desenvolvido em <code>Swift</code>.
+        Sua interface foi implementada por meio do framework <code>SwiftUI</code>.
+        O framework <code>Swift</code> <code>Charts</code> foi utilizado para gerar os gráficos.
+        Para armazenar e acessar os dados de saúde do usuário de maneira segura e confiável utilizamos o
+        framework <code>HealthKit</code>.
+    </p>
+
+    <h3>Metodologia</h3>
+    <p>O aplicativo foi desenvolvido por participantes do programa Apple Developer Academy PUC-Rio. Por conta disso, utilizamos a metodologia <a href="https://www.challengebasedlearning.org/framework/">CBL (Challenge Based Learning)</a>. Tivemos aproximadamente 3 meses entre o anúncio dos grupos, as discussões entre integrantes para a decisão do tema do aplicativo, o seu desenvolvimento, sua publicação e a apresentação final.</p>
+
+    <h3>Equipe</h3>
+    <ul>
+        <li>Andreza Paiva – Administração</li>
+        <li>Maria Eduarda Lucena – Publicidade</li>
+        <li>Sofia Gelli – Design</li>
+        <li><em>Victor Martins</em> – Computação</li>
+    </ul>
+
+    <div class="more_info_section">
+        <h3>Mais informações</h3>
+        <p>
+            Os dados inseridos no aplicativo são armazenados de maneira segura por meio do Apple Health. O aplicativo
+            não armazena esses dados de maneiras alternativas e nem os envia para fora do dispositivo do usuário. O
+            compartilhamento dos dados é possível por meio de interações explícitas do usuário sobre as visualizações
+            geradas ou por meio de outros aplicativos que, com consentimento explícito do usuário por meio do Apple
+            Health, obtém acesso aos dados do Lina, que seguem o padrão da plataforma para permitir usos desse tipo.
+        </p>
+
+        <h3>Aprendizados Técnicos</h3>
+        <div class="skill_section">
+
+            <div class="skill_group">
+                <h4>SwiftUI</h4>
+                <h5>Learned</h5>
+                <ul>
+                    <li>Preference Keys</li>
+                    <li>Swift Charts</li>
+                    <li>View Styles<br>Button, Toggle, Disclosure Group, …</li>
+                    <li>Image Renderer</li>
+                    <li>ShareLink</li>
+                    <li>AppStorage</li>
+                    <li>Scene Phases</li>
+                    <li>FocusState</li>
+                </ul>
+                <h5>More Experience</h5>
+                <ul>
+                    <li>Navigation techniques</li>
+                    <li>EnvironmentObject</li>
+                    <li>Namespace</li>
+                    <li>Matched Geometry Effect</li>
+                    <li>Custom container views</li>
+                    <li>UIKit fallback techniques for customization Tab Bar, Navigation Bar, ...</li>
+                </ul>
+            </div>
+            <div class="skill_group">
+                <h4>Swift</h4>
+                <h5>More Experience</h5>
+                <ul>
+                    <li>Generics</li>
+                    <li>KeyPaths</li>
+                    <li>Date Handling</li>
+                    <li>Swift Concurrency async/await, Task, MainActor, ...</li>
+                </ul>
+            </div>
+            <div class="skill_group">
+                <h4>HealthKit</h4>
+                <h5>Learned</h5>
+                <ul>
+                    <li>Entitlements
+                    <li>Authorization request and status monitoring</li>
+                    <li>Creating and storing samples</li>
+                    <li>Reading samples</li>
+                    <li>Predicates (filtering and sorting)</li>
+                </ul>
+                <h5>More Experience</h5>
+                <ul>
+                    <li>New async versions of methods</li>
+                </ul>
+            </div>
+            <div class="skill_group">
+                <h4>iOS</h4>
+
+                <h5>Learned</h5>
+                <ul>
+                    <li>Keychain for secure data storage</li>
+                    <li>Formatters<br>Number, Date, DateComponents, RelativeDate and PersonNameComponents</li>
+                </ul>
+                <h5>More Experience</h5>
+                <ul>
+                    <li>Quick Actions</li>
+                    <li>Local Notifications</li>
+                    <li>Haptic Feedback</li>
+                    <li>UserDefaults</li>
+                    <li>VoiceOver</li>
+                </ul>
+            </div>
+            <div class="skill_group">
+                <h4>Design</h4>
+
+                <h5>Learned</h5>
+                <ul>
+                    <li>Prototyping tools</li>
+                    <li>Vector Assets</li>
+                    <li>Custom Font</li>
+                </ul>
+                <h5>More Experience</h5>
+                <ul>
+                    <li>Dark Mode</li>
+                </ul>
+            </div>
+            <div class="skill_group">
+                <h4>Developer Tools</h4>
+
+                <h5>Learned</h5>
+                <ul>
+                    <li>Xcode Project Configurations</li>
+                    <li>Archiving</li>
+                    <li>TestFlight</li>
+                    <li>App Store Connect</li>
+                    <li>Crash Reports</li>
+                </ul>
+                <h5>More Experience</h5>
+                <ul>
+                    <li>Schemes</li>
+                    <li>Conditional Compilation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+</body>
+</html>

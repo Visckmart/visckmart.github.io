@@ -1,0 +1,164 @@
+/*body {*/
+/*    margin-left: 10pt;*/
+/*    margin-right: 10pt;*/
+/*}*/
+article {
+    width: clamp(10em, 100%, 50em);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*.project_header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: flex-start;*/
+/*}*/
+/*.project_header > * {*/
+/*    margin: 0;*/
+/*}*/
+.project_header h3 {
+    font-size: 1.45em;
+    color: white;
+    padding:0;
+    margin: 4pt 0 5pt;
+}
+article h1 {
+    font-size: 3em;
+    color: var(--accentColor);
+    margin-bottom: 0;
+}
+
+article h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    color: var(--accentColor);
+    margin-bottom: 0;
+}
+article h4 {
+    font-weight: 550;
+}
+article h3 {
+    font-size: 1.45em;
+    color: var(--accentColor);
+    margin-top: 20pt;
+    margin-bottom: 5pt;
+}
+article p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.35;
+    font-kerning: none;
+    letter-spacing: .015em;
+}
+article p, article li {
+    font-size: 1.1em;
+    line-height: 1.35;
+}
+
+article p + p {
+    margin-top: 8pt;
+}
+article ul {
+    margin-top: 0;
+    list-style-type: none;
+    padding-left: 20pt;
+}
+
+article code {
+    font-weight: normal;
+    font-size: 110%;
+    color: var(--accentColor);
+}
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+article a {
+    color: white;
+}
+
+/*article em {*/
+/*    font-weight: 550;*/
+/*    font-style: normal;*/
+/*    color: var(--accentColor);*/
+/*}*/
+
+/*article em {*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*    text-decoration: underline;*/
+/*    text-decoration-color: #777;*/
+/*}*/
+article em {
+    font-weight: normal;
+    font-style: normal;
+}
+
+article > ul {
+    padding-left: 0;
+}
+
+article .more_info_section {
+    margin-top: 50pt;
+}
+
+article .more_info_section h3 {
+    filter: brightness(0.95);
+}
+article .more_info_section p {
+    color: #eee;
+}
+.more_info_section h4, .more_info_section h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.skill_section {
+    column-count: 2;
+    column-fill: auto;
+}
+@media (max-width: 550px) {
+    .skill_section {
+        column-count: 1;
+    }
+}
+.skill_section h4 {
+    font-size: 1.15em;
+}
+#l::before {
+    font-size: 3rem;
+    content: "Lina";
+    margin-left: -2.5em;
+    margin-right: 0.5em;
+    text-align: right;
+}
+.skill_section h5 {
+    margin-left: 10pt;
+    font-size: 1.05em;
+    font-weight: 550;
+}
+.skill_group {
+    padding-bottom: 15pt;
+    margin-bottom: 0;
+}
+.skill_section ul {
+    padding-bottom: 8pt;
+    margin-bottom: 0;
+}
+
+.skill_section li {
+    line-height: 1;
+    margin-top: 3pt;
+    font-size: 1em;
+}
+/*.skill_section h4 {*/
+/*    break-before: avoid-column;*/
+/*}*/
+
+.skill_section .skill_group {
+    break-inside: avoid;
+    /*background: green;*/
+}

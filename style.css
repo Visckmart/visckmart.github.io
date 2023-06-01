@@ -1,0 +1,12 @@
+body {
+	background: #222;
+	color: white;
+	font-family: 'Archivo', sans-serif;
+	font-stretch: 95%;
+	margin-left: 20pt;
+	margin-right: 20pt;
+}
+nav a {
+	color: white;
+	text-decoration: none;
+}
