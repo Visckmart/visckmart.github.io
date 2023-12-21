@@ -25,17 +25,44 @@ main {
 /*}*/
 
 
+.recursion {
+    transition: opacity 200ms, display 200ms allow-discrete;
+  display: none;
+  opacity: 0;
+}
+#this:target .recursion {
+    display: block;
+     transition: opacity 200ms, display 200ms allow-discrete;
+    opacity: 1;
+}
+.norecursion {
+    display: block;
+     transition: opacity 200ms, display 200ms allow-discrete;
+    opacity: 1;
+}
+#this:target .norecursion {
+    transition: opacity 200ms, display 200ms allow-discrete;
+  display: none;
+  opacity: 0;
+}
+.project-card .recursion p {
+    font-size: 11pt;
+    color: black;
+    font-style: italic;
+/*    font-weight: 550;*/
+}
 
 .presentation {
     display: grid;
-    grid-template-columns: 50pt fit-content(100%)  1fr;
+    grid-template-columns: 125pt fit-content(100%)  1fr;
     /*justify-content: flex-start;*/
     align-items: center;
     gap: 50pt;
-    margin-top: 35pt;
-    width: clamp(10em, 100%, 54em);
-    margin-left: auto;
+    margin-top: 4vh;
+    width: clamp(10em, 100%, 55em);
+    margin-left: 50pt;
     margin-right: auto;
+/*    margin-bottom: 50pt;*/
 }
 
 .presentation img {
@@ -67,6 +94,7 @@ main {
 .presentation h2 {
     margin-top: 0;
     font-weight: 100;
+    margin: 0;
 }
 /*.presentation h2 + h2 {*/
 /*    !*font-weight: 400;*!*/
@@ -80,6 +108,14 @@ main {
     text-decoration-color: #12FFFF;
     font-style: normal;
 }
+
+em {
+/*    text-decoration: underline;*/
+    text-decoration-color: white;
+    font-style: normal;
+    color: white;
+}
+
 
 /*.presentation a {*/
     /*display: list-item;*/
@@ -135,12 +171,12 @@ main {
 .about-me {
     font-size: 1.2rem;
     letter-spacing: 0.35pt;
-    line-height: 1.2rem;
+/*    line-height: 1.2rem;*/
     /*text-align: justify;*/
 }
 .about-me p + p {
     word-spacing: 1.5pt;
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 0.15pt;
     margin-top: 8pt;
 }
@@ -163,6 +199,80 @@ main {
     left: 1pt;
 }
 
+.education ul {
+    margin-left: 10pt;
+    padding-left: 0;
+    margin-top: 5pt;
+    margin-bottom: 0;
+}
+
+.education li {
+    list-style-type: none;
+    font-size: 1.25rem;
+/*    line-height: 0;*/
+    padding-bottom: 12pt;
+}
+
+.education li:last-child {
+    padding-bottom: 10pt;
+}
+
+.education .title {
+    font-weight: 550;
+    margin: 0;
+    position: relative;
+}
+.education .title:before {
+    content: "+";
+    margin-left: -1.5ch;
+    position: absolute;
+    top: -2pt;
+    font: monospace;
+    color: #80FFFF;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.education .duration {
+    padding-left: 10pt;
+    font-size: 1.25rem;
+    font-variant-caps: all-petite-caps;
+    font-weight: normal;
+}
+
+.education li .description {
+/*    padding-top: -5pt;*/
+/*    line-height: initial;*/
+    max-width: 38em;
+    font-size: 1.1rem;
+    color: #BBB;
+    line-height: 130%;
+    padding-left: 8pt;
+    margin-left: -10pt;
+    border-left: 2pt solid #555;
+    transition: 0.3s;
+}
+.education li .description:hover {
+    color: #EEE;
+    transition: 0.3s;
+    border-left: 2pt solid #EEE;
+}
+
+.education li .description p:first-child {
+    color: white;
+    font-size: 1.05rem;
+    margin-bottom: 4pt;
+}
+.education em {
+    color: #EEE;
+}
+.education li .description:hover em {
+    color: white;
+/*    text-decoration: underline;*/
+/*    text-decoration-color: #12FFFF;*/
+}
+
+.education li .description * { margin: 0; padding: 0; }
 .project-card-header {
     max-height: min-content !important;
     overflow: hidden;
@@ -269,8 +379,8 @@ hr {
     display: none;
 }
 .projects-section > h2, .projects-section > h3 {
-    margin-top: 25pt;
-    margin-bottom: 10pt;
+    margin-top: 10pt;
+    margin-bottom: 8pt;
     margin-left: 0;
 
     font-size: 1.25rem;
@@ -290,9 +400,9 @@ hr {
     justify-content: center;
 }
 .projects-section > h3:after {
-    background: #888;
-    height: 0.5pt;
-    margin-left: 5pt;
+    background: #555;
+    height: 2pt;
+    margin-left: 10pt;
     flex: 1;
     content: '';
 }
@@ -302,8 +412,8 @@ hr {
     /*flex-direction: row;*/
     /*flex-wrap: wrap;*/
     /*grid-template-columns: repeat(auto-fit, minmax(100pt, 1fr));*/
-    grid-template-columns: repeat(auto-fit, minmax(140pt, 1fr));
-    grid-gap: 12pt;
+    grid-template-columns: repeat(4, minmax(140pt, 1fr));
+    grid-gap: 10pt;
 }
 
 
@@ -318,10 +428,10 @@ hr {
 }
 
 .project-card:nth-child(1) { animation-delay: 0.1s; animation-duration: calc(0.75s - 0s);/*transform: translateY(20pt);*/ }
-.project-card:nth-child(4) { animation-delay: 0.1s; animation-duration: calc(0.75s - 0s);/*transform: translateY(35pt);*/ }
+.project-card:nth-child(5) { animation-delay: 0.1s; animation-duration: calc(0.75s - 0s);/*transform: translateY(35pt);*/ }
 .project-card:nth-child(2) { animation-delay: 0.155s; animation-duration: calc(0.75s - 0.055s);/*transform: translateY(25pt);*/ }
-.project-card:nth-child(5) { animation-delay: 0.155s; animation-duration: calc(0.75s - 0.055s);/*transform: translateY(25pt);*/ }
-.project-card:nth-child(3) { animation-delay: 0.21s; animation-duration: calc(0.75s - 0.11s);/*transform: translateY(30pt);*/ }
+.project-card:nth-child(3) { animation-delay: 0.155s; animation-duration: calc(0.75s - 0.055s);/*transform: translateY(25pt);*/ }
+.project-card:nth-child(4) { animation-delay: 0.21s; animation-duration: calc(0.75s - 0.11s);/*transform: translateY(30pt);*/ }
 
 @keyframes animate-fade {
     0% { opacity: 0.3; transform: translateY(20pt);}
@@ -330,16 +440,19 @@ hr {
 }
 .projects-list.real {
     /*grid-template-columns: repeat(4, 1fr);*/
-    grid-template-columns: repeat(auto-fit, minmax(140pt, 1fr));
+    grid-template-columns: repeat(4, minmax(140pt, 1fr));
 }
 .projects-list.real .project-card {
-    height: 120pt;
+    min-height: 110pt;
     /*width: 200pt;*/
 }
 
 .projects-list a {
     margin: 0;
     padding: 0;
+}
+.projects-section .trabalhos {
+    grid-template-columns: repeat(4, minmax(140pt, 1fr));
 }
 
 /*.projects-list.experiments {*/
@@ -357,9 +470,9 @@ hr {
 
     /*width: min-content;*/
     /*min-width: 175pt;*/
-    height: 55pt;
+/*    height: 55pt;*/
 
-    padding: 8pt;
+    padding: 10pt;
     border-radius: 15pt;
 
     transition: transform 0.25s;
@@ -399,9 +512,10 @@ hr {
 
 .project-card .action {
     mix-blend-mode: multiply !important;
+    margin-top: 5pt;
 }
 
-.project-card:not(:hover) .action:first-of-type {
+.project-card:not(:hover) .action {
     background-color: transparent !important;
     mix-blend-mode: normal !important;
 }
@@ -442,13 +556,18 @@ hr {
 .project-card p {
     padding-right: 10pt;
 
-    font-size: 0.85rem;
+    font-size: 0.90rem;
     font-stretch: 100%;
-    color: #555;
-    opacity: 0.9;
-    line-height: 1.1;
+    color: #444;
+/*    opacity: 0.9;*/
+/*    line-height: 1.1;*/
 
     transition: opacity 0.25s;
+}
+
+.project-card p + p {
+    margin-top: 4pt;
+    padding-right: 0;
 }
 
 .project-card:hover p {
@@ -468,14 +587,15 @@ hr {
 .project-card.graphteacher { --card-color: #FFE0F3; }
 .project-card.portfolio { --card-color: #dedede; }
 .project-card.graphroad { --card-color: #FFCA80; }
+.project-card.blog { --card-color: #CFF7C5; }
 
-.project-card.hapticsdsl { --card-color: #CFF7C5; }
+.project-card.hapticsdsl { --card-color: #FCF6B1; }
 .project-card.notificationhandler { --card-color: #F7A6A1; }
 .project-card.qrdecoder { --card-color: #F7C7AD; }
 .project-card.microcontrollerui { --card-color: #DDEDFF; }
 
-.project-card.salut { --card-color: #FF8E91; }
-.project-card.parquelage { --card-color: #99CC9F; }
-.project-card.cordainterativa { --card-color: #FCF6B1; }
-.project-card.cofredigital { --card-color: #99BBFF; }
-.project-card.dictdistribuido { --card-color: #FFC194; }
+.project-card.salut { --card-color: #eee; }
+.project-card.parquelage { --card-color: #eee; }
+.project-card.cordainterativa { --card-color: #eee; }
+.project-card.cofredigital { --card-color: #eee; }
+.project-card.dictdistribuido { --card-color: #eee; }

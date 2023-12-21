@@ -6,20 +6,20 @@
     <link rel="stylesheet" href="index.css"/>
 	<link href='https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@95,400..800;100,400..800' rel='stylesheet'>
 </head>
-<body style="background: #222;">
+<body style="background: #222;" id="this">
 <main>
 <div class="presentation">
-    <img src="me.png"/>
+    <!-- <img src="me.png"/> -->
     <div id="zz">
     <h1 lang="pt">Olá!</h1>
         <h1 lang="en">Hello!</h1>
 
     <h2 lang="pt">
-        Meu nome é<br><em><b>Victor Martins</b></em>.
+        <b>Meu nome é<br>Victor Martins.</b>
     </h2>
 
     <h2 lang="en">
-        I'm <em><b>Victor Martins</b></em>.
+        <b>I'm Victor Martins.</b>
     </h2>
     </div>
     <div class="presentation-text">
@@ -34,7 +34,7 @@
                 Eu amo aprender sobre <em>computação</em> e explorar as suas interseções com diferentes áreas do conhecimento.
             </p>
             <p>
-                Comecei a programar bem novo, por diversão. Hoje, desenvolvimento de aplicativos, teoria da computação e linguagens de programação são alguns dos assuntos que mais me interesso.
+                Comecei a programar bem novo, por diversão. Desenvolvimento de aplicativos, teoria da computação e linguagens de programação são alguns dos assuntos que mais me interesso.
             </p>
 <!--            <p>-->
 <!--                Sou brasileiro e estudante de Ciência da Computação. Comecei a programar bem novo, por diversão.-->
@@ -63,23 +63,22 @@
 <!--            <p>-->
 <!--                Hoje tenho experiência nessas e em outras linguagens, como C e JavaScript.-->
 <!--            </p>-->
-            <p>
+            <!-- <p>
                 <a href="./about.html">
                     Saiba mais sobre mim.︎
                     <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" fill="currentColor" viewBox="0 0 7.75 7.75">
                         <path xmlns="http://www.w3.org/2000/svg" d="M7.14243896,0.5 C7.14243896,0.223857625 6.91858134,0 6.64243896,0 L0.642438963,0 C0.366296588,0 0.142438963,0.223857625 0.142438963,0.5 C0.142438963,0.776142375 0.366296588,1 0.642438963,1 L5.43543896,1 L0.146643004,6.292 C0.0201709849,6.41847202 -0.029221961,6.602809 0.0170700108,6.77557299 C0.0633619825,6.94833698 0.19830602,7.08328102 0.371070011,7.12957299 C0.543834001,7.17586496 0.728170985,7.12647202 0.854643004,7 L6.14243896,1.707 L6.14243896,6.5 C6.14243896,6.77614237 6.36629659,7 6.64243896,7 C6.91858134,7 7.14243896,6.77614237 7.14243896,6.5 L7.14243896,0.5 Z" id="Path"/>
                     </svg>
                 </a>
-            </p>
+            </p> -->
         </div>
         <div class="about-me" lang="en">
             <p>
                 I love learning about <em>computer science</em> and exploring its intersections with different branches of knowledge.
             </p>
             <p>
-                I started coding for fun on my free time after school. Now, I'm studying Computer Science and app
-                development, programming language design and theoretical computer science are some of the topics I find
-                most&nbsp;interesting.
+                I started coding for fun on my free time after school. Now I'm studying Computer Science at university, some of the topics I find
+                most&nbsp;interesting are app development, programming language design and theoretical computer science.
             </p>
 <!--            <p>-->
 <!--                <a href="./about.html">-->
@@ -106,6 +105,81 @@
 <!--        </h2>-->
     </div>
 </div>
+
+
+<div class="education" lang="pt">
+<!-- 
+	<div class="projects-section">
+	<h3 lang="pt" style="animation: none"><span>Educação</span></h3>
+	</div> -->
+	<ul>
+		<li>
+			<p class="title">Graduação em Ciência da Computação<span class="duration">2018 – presente</span></p>
+			<div class="description">
+				<p>Pontifícia Universidade Católica do Rio de Janeiro</p>
+			</div>
+		</li>
+		<li>
+			<p class="title">Participante e Embaixador do Apple Developer Academy PUC-Rio<span class="duration">2022 – 2023</span></p>
+			<div class="description">
+				<p>Programa resultado de parceria entre a Apple e a PUC-Rio</p>
+				<p>Participei de equipes multidiciplinares <em>desenvolvendo aplicativos</em> relacionados a temas como saúde, clima e educação.</p>
+				<p>Fui eleito para representar a turma sendo um dos dois embaixadores no segundo ano do programa.</p>
+			</div>
+		</li>
+		<li>
+			<p class="title">Participante do Swift Mentorship Program 2023<span class="duration">Ago. – Out. 2023</span></p>
+			<div class="description">
+				<p>Programa da Apple e para incentivar contribuições para projetos open source em Swift</p>
+				<p>Um contribuidor experiente da comunidade foi selecionado para ser meu mentor pelos 3 meses do programa.</p>
+				<p>Com ele aprendi a <em>contribuir para o compilador de Swift</em> e tive uma das minhas contribuições aprovada por engenheiros da Apple.</p>
+			</div>
+		</li>
+
+		<li>
+			<p class="title">Aluno de Iniciação Científica em Tipagem e Linguagens de Programação<span class="duration">Ago. 2019 – Ago. 2021</span></p>
+			<div class="description">
+				<p>Estudo guiado do livro Types and Programming Languages do Benjamin C. Pierce</p>
+				<p>Meu orientador foi o professor Roberto Ierusalimschy. Fizemos um <em>estudo guiado do livro Types and Programming Languages</em>, começando em Cálculo Lambda, tipagem com numerais e booleanos e indo até conceitos mais avançados.</p>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<div class="education" lang="en">
+	<ul>
+		<li>
+			<p class="title">Bachelor in Computer Science<span class="duration">2018 – now</span></p>
+			<div class="description">
+				<p>Pontifícia Universidade Católica do Rio de Janeiro</p>
+			</div>
+		</li>
+		<li>
+			<p class="title">Apple Developer Academy PUC-Rio Alumni and Ambassador<span class="duration">2022 – 2023</span></p>
+			<div class="description">
+				<p>This program is the result of a partnership between Apple and the PUC-Rio university</p>
+				<p>I took part in multidisciplinary teams <em>developing apps</em> related to multiple areas such as health, weather and education.</p>
+				<p>I was elected to represent our cohort as on of the two ambassadors on my second year participating in the program.</p>
+			</div>
+		</li>
+		<li>
+			<p class="title">Swift Mentorship Program 2023 Mentee<span class="duration">Aug. – Oct. 2023</span></p>
+			<div class="description">
+				<p>This is an Apple initiative to incentivize contributions to open-source Swift projects</p>
+				<p>An experienced contributor from the community was selected to be my mentour throughout the 3 months of the program.</p>
+				<p>I learned how to <em>contribute to the Swift compiler</em> and even had one of my contributions approved by Apple engineers.</p>
+			</div>
+		</li>
+		<li>
+			<p class="title">Undergraduate Research on Types and Programming Languages<span class="duration">Aug. 2019 – Aug. 2021</span></p>
+			<div class="description">
+				<p>Study based on the Types and Programming Languages from Benjamin C. Pierce</p>
+				<p>My research advisor was professor Roberto Ierusalimschy. We did a <em>guided study of the Types and Programming Languages</em> book, starting from Lambda Calculus, typing with booleans and numbers and then reaching into some more advanced topics.</p>
+			</div>
+		</li>
+	</ul>
+</div>
+
 <!--<hr>-->
 
 <!--    <input type="checkbox" class="theme-switch" id="theme-switch" />-->
@@ -121,7 +195,7 @@
 			<a class="overlaylink" href="./lina.html"></a>
             <div class="project-card-header">
                 <h3>Lina</h3>
-                <img src="./Lina.png"/>
+                <img src="./Lina Ícone Transparente.png"/>
             </div>
 <!--			<h3>Lina</h3>-->
 			<h4 lang="pt">App para iOS</h4>
@@ -129,7 +203,8 @@
 			<p style="max-width: 100%;margin-top:4pt" lang="pt">Diário de seu diabetes gestacional.</p>
             <p style="max-width: 100%;margin-top:4pt" lang="en">A glicose tracker for gestational diabetes.</p>
 			<div style="margin-top: auto">
-				<a class="action" href="">Ver detalhes</a>
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
 				<!-- <a class="action" href="">Visitar</a> -->
 			</div>
 		</div>
@@ -145,28 +220,38 @@
 			<p style="max-width: 100%;margin-top:4pt" lang="pt">Ferramenta de manipulação<br>de grafos e exploração de&nbsp;algoritmos.</p>
             <p style="max-width: 100%;margin-top:4pt" lang="en">Graph creation and graph algorithm exploration tool.</p>
 				<div style="margin-top: auto">
-				<a class="action" href="">Ver detalhes</a>
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
 				<!-- <a class="action" href="">Visitar</a> -->
 			</div>
 		</div>
-        <div class="project-card portfolio">
-            <a class="overlaylink" href=""></a>
+
+        <!-- <div class="project-card portfolio">
+            <a class="overlaylink" href="#this"></a>
             <div class="project-card-header">
                 <h3 lang="pt">Site Pessoal</h3>
                 <h3 lang="en">Personal Page</h3>
                 <h3>🏠</h3>
             </div>
-            <h4 lang="pt">Página web</h4>
-            <h4 lang="en">Web page</h4>
-            <p style="max-width: 100%;margin-top:4pt" lang="pt">Página que mostra meus projetos e me apresenta.</p>
-            <p style="max-width: 100%;margin-top:4pt" lang="en">Page that talks about me and shows my projects.</p>
+            
+	            <h4 lang="pt">Página web</h4>
+	            <h4 lang="en">Web page</h4>
+            <div class="norecursion" style="margin-top:4pt;">
+	            <p style="max-width: 100%" lang="pt">Página que mostra meus projetos e me apresenta.</p>
+	            <p style="max-width: 100%;margin-top:4pt" lang="en">Page that talks about me and shows my projects.</p>
+	        </div>
+
+	        <div class="recursion" style="margin-top:4pt;">
+	            <p lang="pt">Esta página foi escrita completamente à mão com HTML e CSS e sem o uso de JavaScript!</p>
+	            <p lang="en">This page's entire source code was written by hand with HTML and CSS and without the use of JavaScript!</p>
+	        </div>
             <div style="margin-top: auto">
-                <a class="action" href="">Ver detalhes</a>
-                <!-- <a class="action" href="">Visitar</a> -->
+                <a class="norecursion action" href="apple.com">Ver detalhes</a>
             </div>
-        </div>
+        </div> -->
 
         <div class="project-card graphroad">
+            <a class="overlaylink" href="./graphroad.html"></a>
             <div style="display: flex; justify-content: space-between; width: 100%">
                 <h3>GraphRoad</h3>
                 <h3>🏆</h3>
@@ -174,9 +259,31 @@
             <h4 lang="pt">Jogo para iOS</h4>
             <h4 lang="en">Educational iOS game</h4>
             <p style="max-width: 100%;margin-top:4pt" lang="pt">Jogo educativo que aborda grafos de maneira acessível.</p>
-            <p style="max-width: 100%;margin-top:4pt" lang="en">Game that teaches about Discrete Math's graphs in a fun way.<span style="line-height: 0.5em"><br><br></span>Selected as a winner of the Swift Student Challenge 2022</p>
+
+            <p style="max-width: 100%;margin-top:4pt" lang="en">Game that teaches about Discrete Math's graphs.</p><p>One of the winners of the Swift Student Challenge 2022</p>
+            <!-- <p style="max-width: 100%;margin-top:4pt" lang="en">Game that teaches about Discrete Math's graphs in a fun way.<span style="line-height: 0.5em"><br><br></span>Selected as a winner of the Swift Student Challenge 2022</p> -->
             <div style="margin-top: auto">
-                <a class="action" href="">Ver detalhes</a>
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
+                <!-- <a class="action" href="">Visitar</a> -->
+            </div>
+        </div>
+
+        <div class="project-card blog">
+
+            <a class="overlaylink" href="https://medium.com/@Visckmart"></a>
+            <div style="display: flex; justify-content: space-between; width: 100%">
+                <h3 lang="pt">Artigos</h3>
+                <h3 lang="en">Articles</h3>
+                <h3>📖</h3>
+            </div>
+            <h4 lang="pt">Conteúdo Educacional</h4>
+            <h4 lang="en">Educational Content</h4>
+            <p style="max-width: 100%;margin-top:4pt" lang="pt">Escrevo artigos explicando recursos básicos e bastante avançados de Swift.</p>
+            <p style="max-width: 100%;margin-top:4pt" lang="en">I write articles about both essential and advanced topics related to Swift.</p>
+            <div style="margin-top: auto">
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
                 <!-- <a class="action" href="">Visitar</a> -->
             </div>
         </div>
@@ -186,13 +293,37 @@
     <h3 lang="pt">Experimentos</h3>
     <h3 lang="en">More Published Projects</h3>
 	<div class="projects-list experiments">
+		<!-- <div class="project-card portfolio">
+            <a class="overlaylink" href="#this"></a>
+            <div class="project-card-header">
+                <h3 lang="pt">Site Pessoal</h3>
+                <h3 lang="en">Personal Page</h3>
+                <h3>🏠</h3>
+            </div>
+            
+	            <h4 lang="pt">Página web</h4>
+	            <h4 lang="en">Web page</h4>
+            <div class="norecursion" style="margin-top:4pt;">
+	            <p style="max-width: 100%" lang="pt">Página que mostra meus projetos e me apresenta.</p>
+	            <p style="max-width: 100%;margin-top:4pt" lang="en">Page that talks about me and shows my projects.</p>
+	        </div>
+
+	        <div class="recursion" style="margin-top:4pt;">
+	            <p lang="pt">Esta página foi escrita completamente à mão com HTML e CSS e sem o uso de JavaScript!</p>
+	            <p lang="en">This page's entire source code was written by hand with HTML and CSS and without the use of JavaScript!</p>
+	        </div>
+            <div style="margin-top: auto">
+                <a class="norecursion action" href="apple.com">Ver detalhes</a>
+            </div>
+        </div> -->
 		<div class="project-card hapticsdsl">
 			<a class="overlaylink" href="https://github.com/Visckmart/HapticsDSL"></a>
 			<h3>HapticDSL</h3>
 			<h4 lang="pt">Framework para iOS</h4>
 			<h4 lang="en">iOS framework</h4>
 			<div style="margin-top: auto">
-				<a class="action" href="">Ver detalhes</a>
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
 				<!-- <a class="action" href="">Visitar</a> -->
 			</div>
 		</div>
@@ -202,7 +333,8 @@
 			<h4 lang="pt">Framework para iOS</h4>
 			<h4 lang="en">iOS framework</h4>
 			<div style="margin-top: auto">
-				<a class="action" href="">Ver detalhes</a>
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
 				<!-- <a class="action" href="">Visitar</a> -->
 			</div>
 		</div>
@@ -212,7 +344,8 @@
 			<h4 lang="pt">App CLI para macOS</h4>
 			<h4 lang="en">macOS CLI app</h4>
 			<div style="margin-top: auto">
-				<a class="action" href="">Ver detalhes</a>
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
 				<!-- <a class="action" href="">Visitar</a> -->
 			</div>
 		</div>
@@ -222,7 +355,8 @@
 			<h4 lang="pt">App para macOS</h4>
 			<h4 lang="en">macOS app</h4>
 			<div style="margin-top: auto">
-				<a class="action" href="">Ver detalhes</a>
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
 				<!-- <a class="action" href="">Visitar</a> -->
 			</div>
 		</div>
@@ -238,47 +372,56 @@
 			<h4 lang="pt">App para iOS</h4>
 			<h4 lang="en">iOS app</h4>
 			<div style="margin-top: auto">
-				<a class="action" href="">Ver detalhes</a>
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
 				<!-- <a class="action" href="">Visitar</a> -->
 			</div>
 		</div>
 		<div class="project-card parquelage">
             <a class="overlaylink" href="https://github.com/Visckmart/ParqueLageApp"></a>
-			<h3>App Parque Lage</h3>
+			<h3 lang="pt">App Parque Lage</h3>
+			<h3 lang="en">Parque Lage App</h3>
 			<h4 lang="pt">App para iOS</h4>
 			<h4 lang="en">iOS app</h4>
 			<div style="margin-top: auto">
-				<a class="action" href="">Ver detalhes</a>
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
 				<!-- <a class="action" href="">Visitar</a> -->
 			</div>
 		</div>
 		<div class="project-card cordainterativa">
             <a class="overlaylink" href="https://github.com/Visckmart/CordaInterativa"></a>
-			<h3>Corda interativa</h3>
+			<h3 lang="pt">Corda interativa</h3>
+			<h3 lang="en">Interactive Rope</h3>
 			<h4 lang="pt">Página Interativa</h4>
 			<h4 lang="en">Interactive web tool</h4>
 			<div style="margin-top: auto">
-				<a class="action" href="">Ver detalhes</a>
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
 				<!-- <a class="action" href="">Visitar</a> -->
 			</div>
 		</div>
         <div class="project-card cofredigital">
             <a class="overlaylink" href="https://github.com/Visckmart/CofreDigital"></a>
-            <h3>Cofre Digital</h3>
+            <h3 lang="pt">Cofre Digital</h3>
+            <h3 lang="en">Digital Safe</h3>
             <h4 lang="pt">Aplicação em Java</h4>
             <h4 lang="en">Java application</h4>
             <div style="margin-top: auto">
-                <a class="action" href="">Ver detalhes</a>
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
                 <!-- <a class="action" href="">Visitar</a> -->
             </div>
         </div>
         <div class="project-card dictdistribuido">
             <a class="overlaylink" href="https://github.com/Visckmart/dicionario_distribuido_mqtt"></a>
-            <h3>Dicionário Distribuído</h3>
+            <h3 lang="pt">Dicionário Distribuído</h3>
+            <h3 lang="en">Distributed Dictionary</h3>
             <h4 lang="pt">Aplicação em Rust</h4>
             <h4 lang="en">Rust application</h4>
             <div style="margin-top: auto">
-                <a class="action" href="">Ver detalhes</a>
+				<a class="action" href="" lang="pt">Ver detalhes</a>
+				<a class="action" href="" lang="en">Know more</a>
                 <!-- <a class="action" href="">Visitar</a> -->
             </div>
         </div>

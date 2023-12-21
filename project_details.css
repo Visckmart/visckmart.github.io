@@ -2,8 +2,14 @@
 /*    margin-left: 10pt;*/
 /*    margin-right: 10pt;*/
 /*}*/
+html:not([lang="pt"]) *[lang="pt"] {
+    display: none;
+}
+html:not([lang="en"]) *[lang="en"] {
+    display: none;
+}
 article {
-    width: clamp(10em, 100%, 50em);
+    width: clamp(10em, 100%, 58em);
     margin-left: auto;
     margin-right: auto;
 }
@@ -66,7 +72,7 @@ article ul {
 
 article code {
     font-weight: normal;
-    font-size: 110%;
+    font-size: 1.2em;
     color: var(--accentColor);
 }
 details > summary {
@@ -161,4 +167,22 @@ article .more_info_section p {
 .skill_section .skill_group {
     break-inside: avoid;
     /*background: green;*/
+}
+
+.screenshots {
+    display: flex;
+    gap: 20pt;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.screenshots > img {
+    max-height: 400pt;
+    scroll-snap-align: start;
+    border-radius: 12pt;
+    object-fit: contain;
+}
+
+img {
+    max-height: 400pt;
 }
