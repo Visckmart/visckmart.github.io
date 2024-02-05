@@ -24,7 +24,14 @@ main {
 /*    margin-right: 10pt;*/
 /*}*/
 
-
+.languages {
+    display: flex;
+    justify-content: flex-end;
+}
+.languages a {
+    color: #CCC;
+    font-weight: bold;
+}
 .recursion {
     transition: opacity 200ms, display 200ms allow-discrete;
   display: none;
@@ -60,7 +67,7 @@ main {
     align-items: center;
     grid-gap: 35pt;
 /*    gap: 50pt;*/
-    margin-top: 4vh;
+    margin-top: 2vh;
     width: clamp(10em, 100%, 55em);
     margin-left: auto;
     margin-right: auto;

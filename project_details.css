@@ -176,17 +176,18 @@ article .more_info_section p {
 .screenshot {
     display: flex;
     justify-content: center;
+    max-width:100%;
 }
 
 .screenshots {
     display: flex;
-    mask-image: linear-gradient(to right, transparent 0%, rgb(0 0 0 / 100%) 1%, rgb(0 0 0 / 100%) 99%, transparent 100%);
+    mask-image: linear-gradient(to right, rgb(0 0 0 / 100%) 99%, transparent 100%);
     grid-gap: 20pt;
     overflow: scroll;
     scroll-snap-type: x mandatory;
 /*    scroll-padding: 50px 0px 0px 50px;*/
-    padding: 0 20pt;
-    margin: 0 -20pt;
+    padding-right: 10pt;
+    margin-right: -10pt;
 }
 
 .screenshots > img {
@@ -197,5 +198,6 @@ article .more_info_section p {
 }
 
 img {
+    max-width:100%;
     max-height: 400pt;
 }
