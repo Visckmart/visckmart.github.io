@@ -103,12 +103,26 @@ main {
 /*    font-weight: 100;*/
 /*}*/
 
-.presentation em {
+
+/*.presentation *:not(a) > em {
     text-decoration: underline;
     text-decoration-color: #12FFFF;
+}*/
+.presentation *:not(a) > em {
+/*    text-decoration: underline;*/
+/*    text-decoration-color: #12FFFF;*/
+color: #80FFFF;
     font-style: normal;
 }
 
+.presentation a em, .education a em {
+    text-decoration: underline;
+    text-decoration-color: #12FFFF;
+
+}
+.presentation a em {
+    font-weight: bold;
+}
 em {
 /*    text-decoration: underline;*/
     text-decoration-color: white;
@@ -252,10 +266,17 @@ em {
     border-left: 2pt solid #555;
     transition: 0.3s;
 }
+
 .education li .description:hover {
     color: #EEE;
     transition: 0.3s;
     border-left: 2pt solid #EEE;
+}
+
+@media (pointer: coarse) {
+    .education li {
+        cursor: pointer;
+    }
 }
 
 .education li .description p:first-child {
