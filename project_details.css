@@ -185,8 +185,8 @@ article .more_info_section p {
     overflow: scroll;
     scroll-snap-type: x mandatory;
 /*    scroll-padding: 50px 0px 0px 50px;*/
-    padding: 0 10pt;
-    margin: 0 -10pt;
+    padding: 0 20pt;
+    margin: 0 -20pt;
 }
 
 .screenshots > img {
