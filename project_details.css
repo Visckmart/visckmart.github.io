@@ -8,10 +8,21 @@ html:not([lang="pt"]) *[lang="pt"] {
 html:not([lang="en"]) *[lang="en"] {
     display: none;
 }
+nav {
+    background: #222;
+    top: -1px;
+    position: sticky;
+}
 article {
-    width: clamp(10em, 100%, 58em);
+    width: clamp(10em, 100%, 55em);
     margin-left: auto;
     margin-right: auto;
+    font-family: "Rubik", sans-serif;
+    /* letter-spacing: 0.015rem; */
+      font-optical-sizing: auto;
+      font-size: 17px;
+      margin-bottom: 100px;
+      /* font-weight: 350; */
 }
 
 /*.project_header {*/
@@ -22,11 +33,16 @@ article {
 /*.project_header > * {*/
 /*    margin: 0;*/
 /*}*/
+
 .project_header h3 {
     font-size: 1.45em;
     color: white;
     padding:0;
     margin: 4pt 0 5pt;
+}
+
+article p {
+    max-width: 45em;
 }
 article h1 {
     font-size: 3em;
@@ -43,11 +59,19 @@ article h2 {
 article h4 {
     font-weight: 550;
 }
+
+
 article h3 {
     font-size: 1.45em;
     color: var(--accentColor);
     margin-top: 20pt;
     margin-bottom: 5pt;
+}
+article h4 {
+    padding-left: 8pt;
+    font-size: 1.25em;
+    margin-top: 8pt;
+    margin-bottom: 4pt;
 }
 article .screenshot + h3 {
     margin-top: 0pt;
@@ -58,7 +82,7 @@ article p {
     margin-bottom: 0;
     line-height: 1.35;
     font-kerning: none;
-    letter-spacing: .015em;
+    /* letter-spacing: .015em; */
 }
 article p, article li {
     font-size: 1.1em;
@@ -75,8 +99,9 @@ article ul {
 }
 
 article code {
-    font-weight: normal;
-    font-size: 1.2em;
+    font: "Times New Roman";
+    font-weight: 700;
+    font-size: 1.1rem;
     color: var(--accentColor);
 }
 details > summary {
@@ -112,7 +137,7 @@ article > ul {
 }
 
 article .more_info_section {
-    margin-top: 50pt;
+    margin-top: 30pt;
 }
 
 article .more_info_section h3 {
@@ -183,7 +208,8 @@ article .more_info_section p {
     display: flex;
     mask-image: linear-gradient(to right, rgb(0 0 0 / 100%) 99%, transparent 100%);
     grid-gap: 20pt;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: visible;
     scroll-snap-type: x mandatory;
 /*    scroll-padding: 50px 0px 0px 50px;*/
     padding-right: 10pt;
@@ -192,6 +218,7 @@ article .more_info_section p {
 
 .screenshots > img {
     max-height: 400pt;
+    max-width: 400pt;
     scroll-snap-align: start;
     border-radius: 12pt;
     object-fit: contain;

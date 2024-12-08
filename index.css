@@ -2,7 +2,7 @@
     --a: initial;
     --b: none;
     --c: "T";
-    /*font-size: 1.25rem;*/
+
 }
 /*[lang="pt"] {*/
 /*    display: var(--a);*/
@@ -18,6 +18,12 @@ main {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: -0.005rem;
+      font-optical-sizing: auto;
+      /* font-weight: <weight>; */
+      font-style: normal;
+    /*font-size: 1.25rem;*/
 }
 /*body {*/
 /*    margin-left: 10pt;*/
@@ -271,21 +277,22 @@ em {
 .education li .description {
 /*    padding-top: -5pt;*/
 /*    line-height: initial;*/
-    max-width: 38em;
+    max-width: 40em;
     font-size: 1.1rem;
     color: #BBB;
     line-height: 130%;
     padding-left: 8pt;
     margin-left: -10pt;
     border-left: 2pt solid #555;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 .education li .description:hover {
     color: #EEE;
-    transition: 0.3s;
+    /* transition: color 0.3s; */
     border-left: 2pt solid #EEE;
 }
+
 
 .education li .description p:first-child {
     color: white;
@@ -311,7 +318,11 @@ em {
 }
 img {
     /*display: none;*/
-    height: 20pt;
+    position: absolute;
+    right: 14;
+    height: 30pt;
+    width: 30pt;
+    object-fit: contain;
     /*overflow: hidden;*/
     /*object-position: right;*/
     /*aspect-ratio: 1 / 1;*/
@@ -438,29 +449,43 @@ hr {
 
 .projects-list {
     display: grid;
-    /*flex-direction: row;*/
-    /*flex-wrap: wrap;*/
-    /*grid-template-columns: repeat(auto-fit, minmax(100pt, 1fr));*/
-    grid-template-columns: repeat(4, minmax(140pt, 1fr));
-    grid-gap: 10pt;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+      grid-auto-rows: minmax(50px, auto);
+      gap: 20px;
+    /* grid-template-columns: repeat(4, minmax(140pt, 1fr));
+    grid-gap: 10pt; */
+}
+.project-card-icon {
+    border: 0.1pt solid #AAA;
+    border-radius: 8pt;
 }
 
+
+.graphteacher .project-card-icon {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    border: transparent;
+    height: 25pt;
+    border-radius: 0;
+}
+
+.blog .project-card-icon {
+    border: transparent;
+    height: 25pt;
+    border-radius: 0;
+}
 
 .project-card {
     animation-duration: 1s;
     animation-name: animate-fade;
-    animation-delay: 4s;
+    /* animation-delay: 4s; */
     /*opacity: 0.3;*/
     /*transform: translateY(20pt);*/
     animation-fill-mode: backwards;
 
 }
 
-.project-card:nth-child(1) { animation-delay: 0.1s; animation-duration: calc(0.75s - 0s);/*transform: translateY(20pt);*/ }
-.project-card:nth-child(5) { animation-delay: 0.1s; animation-duration: calc(0.75s - 0s);/*transform: translateY(35pt);*/ }
-.project-card:nth-child(2) { animation-delay: 0.155s; animation-duration: calc(0.75s - 0.055s);/*transform: translateY(25pt);*/ }
-.project-card:nth-child(3) { animation-delay: 0.155s; animation-duration: calc(0.75s - 0.055s);/*transform: translateY(25pt);*/ }
-.project-card:nth-child(4) { animation-delay: 0.21s; animation-duration: calc(0.75s - 0.11s);/*transform: translateY(30pt);*/ }
+
 
 @keyframes animate-fade {
     0% { opacity: 0.3; transform: translateY(20pt);}
@@ -468,11 +493,12 @@ hr {
     100% { opacity: 1; transform: translateY(0); }
 }
 .projects-list.real {
+    /* grid-auto-rows: minmax(185px, auto); */
     /*grid-template-columns: repeat(4, 1fr);*/
-    grid-template-columns: repeat(4, minmax(140pt, 1fr));
+    /* grid-template-columns: repeat(4, minmax(140pt, 1fr)); */
 }
 .projects-list.real .project-card {
-    min-height: 110pt;
+    min-height: 0pt;
     /*width: 200pt;*/
 }
 
@@ -481,7 +507,7 @@ hr {
     padding: 0;
 }
 .projects-section .trabalhos {
-    grid-template-columns: repeat(4, minmax(140pt, 1fr));
+    /* grid-template-columns: repeat(4, minmax(140pt, 1fr)); */
 }
 
 /*.projects-list.experiments {*/
@@ -542,6 +568,7 @@ hr {
 .project-card .action {
     mix-blend-mode: multiply !important;
     margin-top: 5pt;
+    display: none;
 }
 
 .project-card:not(:hover) .action {
@@ -565,20 +592,22 @@ hr {
     width: 100%;
 }
 .projects-list.real .project-card h3 {
+    font-weight: 550;
     font-size: 1.4rem;
 }
 .project-card h3 {
     font-size: 1.15em;
     line-height: 1.1;
+    font-weight: 500;
     color: black;
 }
 .projects-list.real h4 {
-    font-size: 1em;
+    font-size: 1.05em;
 }
 .project-card h4 {
-    font-size: 0.9rem;
-    line-height:  1;
-    color: #333;
+    font-size: 1rem;
+    line-height:  1.25;
+    color: #555;
     font-weight: normal;
 }
 
@@ -587,7 +616,7 @@ hr {
 
     font-size: 0.90rem;
     font-stretch: 100%;
-    color: #444;
+    color: #333;
 /*    opacity: 0.9;*/
 /*    line-height: 1.1;*/
 
@@ -597,8 +626,11 @@ hr {
 .project-card p + p {
     margin-top: 4pt;
     padding-right: 0;
+    font-size: 1rem;
 }
-
+.project-card p + p + p {
+    font-size: 0.9rem;
+}
 .project-card:hover p {
     opacity: 1;
 }

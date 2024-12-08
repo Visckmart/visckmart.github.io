@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./project_details.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+   <title>Victor Martins – Proposal Monitor</title>
+    <style>
+        :root {
+            --accentColor: color-mix(in oklab, #4B2AF0 25%, white)
+        }
+    </style>
+</head>
+<body>
+<nav><a href="index.html"><h1>Victor Martins</h1></a></nav>
+<article>
+    <div class="project_header" lang="pt">
+        <h1>Proposal Monitor</h1>
+        <h2></h2>
+        <h3></h3>
+    </div>
+
+
+    <div class="project_header" lang="en">
+        <h1>Proposal Monitor</h1>
+        <h2>Keep up to date with Swift's language proposals</h2>
+        <h3>Developer Tools</h3>
+    </div>
+
+    <p lang="pt">
+
+    </p>
+    <p lang="pt">
+
+    </p>
+    <p lang="en">
+        Proposal Monitor lets you explore all of the proposals made for the Swift programming language, see their status and details such as a summary and related previous proposals.
+    </p>
+
+
+    <p lang="en">
+        It also makes it easier than ever to keep up to date with new proposals and changes to the ones being discussed.
+    </p>
+    <p lang="en">
+        This project is entirely developed and maintained by myself, from the interface to the implementation of the app and the backend for the notifications and proposal activity history.
+    </p>
+    <h3 lang="en">Features</h3>
+
+    <div lang="en">
+        <!-- <p>The app shows every proposal that went through the evolution process.</p> -->
+
+        <h4>Notifications</h4>
+        <ul>
+        <li>– Get notified about proposal updates with natural sentences and start reading about them on the spot!</li>
+        <li>– Fine tune the notifications you want to receive.</li>
+        </ul>
+        <h4>Widgets</h4>
+        <ul>
+        <li>– See the latest proposal update on your home screen throughout the day.</li>
+        <li>– Available in multiple sizes, showing details about the update and information about the authors and review managers on specific sizes.</li>
+        <!-- <li>– Both the medium and the small sizes include explanations about the latest update it's showing at the time.</li> -->
+        </ul>
+
+        <h4>Activity</h4>
+        <ul>
+            <li>- The Activity tab allows users to see the recent proposal activity chronologically.</li>
+            <li>- The cloud backend makes sure that even brand-new users are able to load the recent activity history.</li>
+        </ul>
+        <!-- <p>To make exploring the proposals easier you can use tools such as search and filters.</p> -->
+
+        <h4>Interface</h4>
+        <ul>
+            <li>- The interface is cohesive between all platforms (iOS, iPadOS and visionOS).
+            <li>– At the same time, the interface respects each of their specific visual identities and takes advantage of platform-specific features such as ornaments on visionOS.</li>
+        </ul>
+        <h4>Search & Filters</h4>
+        <ul>
+            <li>– Filters let you quickly see what's being reviewed and what's coming on the next version.</li>
+        <li>– Search lets you find proposals by searching for their title, summary, author name, the version a proposal was implemented and much more.</li>
+        <li>- Proposals show up in Spotlight, allowing users to open them up with ease.</li>
+        </ul>
+
+        The app was developed with full support for Dynamic Type and VoiceOver in mind to ensure great Accessibility.
+    </l>
+
+    <h3 lang="pt">Metodologia</h3>
+    <p lang="pt">O aplicativo foi desenvolvido por participantes do programa Apple Developer Academy PUC-Rio. Por conta disso, utilizamos a metodologia <a href="https://www.challengebasedlearning.org/framework/">CBL (Challenge Based Learning)</a>. Tivemos aproximadamente 3 meses entre o anúncio dos grupos, as discussões entre integrantes para a decisão do tema do aplicativo, o seu desenvolvimento, sua publicação e a apresentação final.</p>
+
+    <h3 lang="en">Backend</h3>
+    <p lang="en">The backend is built on AWS using mainly AWS Lambda to fetch the API and check for updates, Amazon DynamoDB to help the change detection and AWS SNS to push silent push notifications to the devices. The AWS Lambdas are written in python, although I already made experiments with running it on Swift too.</p>
+    <p lang="en">The app's source of truth is the official Swift Evolution Metadata API. I participated actively in the process the Swift Website Workgroup (SWWG) initiated to shape this API.</p>
+
+    <h3 lang="pt">Equipe</h3>
+    <ul lang="pt">
+        <li>Andreza Paiva – Administração</li>
+        <li>Maria Eduarda Lucena – Publicidade</li>
+        <li>Sofia Gelli – Design</li>
+        <li><em>Victor Martins</em> – Computação</li>
+    </ul>
+
+    <h3 lang="en">Team</h3>
+    <ul lang="en">
+        <li><em>Victor Martins</em> – Computer Science</li>
+    </ul>
+
+
+    <!-- <br> -->
+    <h4>iOS</h4>
+    <div class="screenshots">
+        <img src="./screenshots/proposalmonitor1.webp">
+        <img src="./screenshots/proposalmonitor2.webp">
+        <img src="./screenshots/proposalmonitor3.webp">
+        <img src="./screenshots/proposalmonitor4.webp">
+    </div>
+
+
+    <br>
+    <h4>visionOS</h4>
+    <div class="screenshots">
+        <img src="./screenshots/proposalmonitor_vision1.webp">
+        <img src="./screenshots/proposalmonitor_vision2.webp">
+        <img src="./screenshots/proposalmonitor_vision3.webp">
+    </div>
+
+</article>
+</body>
+</html>
