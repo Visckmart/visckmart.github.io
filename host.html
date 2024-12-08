@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./project_details.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+   <title>Victor Martins – Host</title>
+    <style>
+
+        :root {
+            --accentColor: #aaa
+        }
+    </style>
+</head>
+<body>
+<nav><a href="index.html"><h1>Victor Martins</h1></a></nav>
+<article>
+    <div class="project_header" lang="pt">
+        <h1>Host</h1>
+        <h2></h2>
+        <h3></h3>
+    </div>
+
+
+    <div class="project_header" lang="en">
+        <h1>Host</h1>
+        <h2>A catalog for parties happening in Rio de Janeiro</h2>
+        <h3>Entertainment</h3>
+    </div>
+
+    <p lang="pt">
+
+    </p>
+    <p lang="pt">
+
+    </p>
+    <p lang="en">
+        Host makes it easy for residents and tourists of Rio de Janeiro to find awesome parties.
+    </p>
+
+    <p lang="en">
+        The app has dozens of parties with various styles and that fit different categories and more content is added every day.
+    </p>
+
+    <p lang="en">
+        This variety of events allows both residents and tourists in Rio to find parties that match their personal taste every time.
+    </p>
+
+    <h3 lang="en">Features</h3>
+    <div lang="en">
+
+        <h4>Feed</h4>
+        <ul>
+        <li>A feed with dozens of parties that updates multiple times a week to show you the coolest parties available of the following days.</li>
+        </ul>
+
+        <h4>Interests</h4>
+        <ul>
+            <li>Tap on the fire icon of any party anywhere in the app and it gets added to your interests list.</li>
+            <li>The interests list makes it easier to find parties you are planning on buying tickets for and schedules automatic reminders to remind you about them a few days before their date.</li>
+            <li>The interests list also acts as a history of all parties you've participated.</li>
+        </ul>
+
+        <h4>Profile</h4>
+        <ul>
+            <li>A quick sign up based on your iCloud credentials requires no password or passkey.</li>
+            <li>The login happens automatically when you open the app in a device with an iCloud account that already did the sign up.</li>
+            <li>Your preferred party categories and interests are some of the information associated with your account.</li>
+        </ul>
+
+
+
+    </div>
+
+    <h3 lang="en">Technology</h3>
+    <h4>App</h4>
+    <p lang="en">The iOS app is completely written in Swift and SwiftUI.</p>
+    <p lang="en"><em>Most views and their components are heavily reusable.</em> Animations are used from the launch screen to the Add to Interests action to make the app more fluid and pleasant to use.</p>
+    <p lang="en">The fire animation triggered by the Add to Interests uses a mixture of SwiftUI features such as anchor preferences, environment values and a math equation to trace the curve that the fire icon follows.</p>
+    <p lang="en">The app has a <em>smart mechanism for fetching and caching information</em>, that carefully prioritizes the fetching of images that are visible to the user.</p>
+    <p lang="en">I added lot of signposts to mark the most important app's actions, such as (but not limited to) fetching and caching, which allows us to <em>use Instruments to profile</em> better understand what is happening in a more visual and effective way.</p>
+    <p lang="en">The <em>VoiceOver support of the feed received special attention</em>, since there is a lot of information on each party card. I also scheduled two WWDC Accessibility labs to get guidance on a couple of implementations, and this was one of the areas I asked for feedback from Apple designers and engineers.</p>
+    <h4>Internal App</h4>
+    <p>To power the Host app we have an internal app that manages the content users see.
+    It's used to add and update information about parties to the Host.
+    It's also capable of adding, removing, updating and reordering the feed in real time. <em>So, this internal app gives us complete control over the content users see.</em></p>
+    <h4>Backend</h4>
+    <p lang="en">The backend is mostly built with Firebase with some CloudKit information. We use storage of documents and assets to store the parties and their images. We also use TelemetryDeck to gather several information points regarding the usage of the app to better understand user patterns and improve their experience.</p>
+
+
+    <h3 lang="en">Team</h3>
+    <ul lang="en">
+        <li><em>Erick Oliveira</em> – Design</li>
+        <li><em>Eduardo Olinto</em> – Computer Science</li>
+        <li><em>Victor Martins</em> – Computer Science</li>
+    </ul>
+
+
+    <br>
+    <h4>iOS</h4>
+    <div class="screenshots">
+        <img src="./screenshots/host1.webp">
+        <img src="./screenshots/host3.webp">
+        <img src="./screenshots/host2.webp">
+    </div>
+
+</article>
+</body>
+</html>

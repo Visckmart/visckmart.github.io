@@ -92,10 +92,10 @@ article p, article li {
 article p + p {
     margin-top: 8pt;
 }
-article ul {
+article ul, article p {
     margin-top: 0;
     list-style-type: none;
-    padding-left: 20pt;
+    padding-left: 12pt;
 }
 
 article code {
@@ -132,9 +132,9 @@ article em {
     font-style: normal;
 }
 
-article > ul {
+/* article > ul {
     padding-left: 0;
-}
+} */
 
 article .more_info_section {
     margin-top: 30pt;
@@ -220,11 +220,18 @@ article .more_info_section p {
     max-height: 400pt;
     max-width: 400pt;
     scroll-snap-align: start;
-    border-radius: 12pt;
+    border-radius: 22px;
     object-fit: contain;
 }
 
 img {
     max-width:100%;
     max-height: 400pt;
+}
+
+p > em {
+    color: #80FFFF;
+    font-weight: 450;
+    /* text-decoration: underline;
+    text-decoration-color: #80FFFF; */
 }

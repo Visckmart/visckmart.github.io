@@ -16,8 +16,9 @@ html:not([lang="en"]) *[lang="en"] {
 main {
     width: 58em;
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 25pt auto;
     font-family: "Rubik", sans-serif;
     letter-spacing: -0.005rem;
       font-optical-sizing: auto;
@@ -131,7 +132,7 @@ main {
 .presentation *:not(a) > em {
 /*    text-decoration: underline;*/
 /*    text-decoration-color: #12FFFF;*/
-color: #80FFFF;
+    color: #80FFFF;
     font-style: normal;
 }
 
@@ -506,7 +507,8 @@ hr {
     margin: 0;
     padding: 0;
 }
-.projects-section .trabalhos {
+.projects-section:has(.trabalhos) {
+    display: none;
     /* grid-template-columns: repeat(4, minmax(140pt, 1fr)); */
 }
 
@@ -650,6 +652,7 @@ hr {
 .project-card.graphroad { --card-color: #FFCA80; }
 .project-card.blog { --card-color: #CFF7C5; }
 
+.project-card.ckmacro { --card-color: #bfbfbf; }
 .project-card.hapticsdsl { --card-color: #FCF6B1; }
 .project-card.notificationhandler { --card-color: #F7A6A1; }
 .project-card.qrdecoder { --card-color: #F7C7AD; }

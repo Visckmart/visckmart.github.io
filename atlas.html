@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./project_details.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+   <title>Victor Martins – Atlas</title>
+    <style>
+
+        :root {
+            --accentColor: color-mix(in oklab, #05B29E 80%, white)
+        }
+    </style>
+</head>
+<body>
+<nav><a href="index.html"><h1>Victor Martins</h1></a></nav>
+<article>
+    <div class="project_header" lang="pt">
+        <h1>Atlas</h1>
+        <h2></h2>
+        <h3></h3>
+    </div>
+
+
+    <div class="project_header" lang="en">
+        <h1>Atlas</h1>
+        <h2>An exam preparation app for the brazilian national exam</h2>
+        <h3>Education</h3>
+    </div>
+
+    <p lang="pt">
+
+    </p>
+    <p lang="pt">
+
+    </p>
+    <p lang="en">
+        Atlas has daily challenges and per-subject quizzes with questions from the brazilian national exam (ENEM) to help students prepare for their evaluation.
+    </p>
+
+    <p lang="en">
+        After I was invited to work on the project, I refactored dozens of files in 10 days and helped evolve their model, cloud database storage, cache, and much more. I also implemented widgets and helped with telemetry.
+    </p>
+
+    <h3 lang="en">Features</h3>
+    <div lang="en">
+        <h4>Daily Challenges & Journey</h4>
+        <ul>
+        <li>Challenge yourself to answer a couple of questions every day to sharpen your knowledge and notice subjects that need more attention.</li>
+        <li>Keep a streak of daily challenges to increase the score of your journey.</li>
+        </ul>
+
+        <h4>Preparation</h4>
+        <ul>
+            <li>Choose a subject or a topic from a subject and answer a sequence of targeted questions.</li>
+        </ul>
+
+        <h4>Mental Health</h4>
+        <ul>
+            <li>We believe it's important to take care of the mental health, specially when you are a student preparing for a high-stress exam.</li><li>So, we built an area on the app with calming audios and visualizations for the students to relax during their intervals.</li>
+        </ul>
+
+        <h4>Widgets & Notifications</h4>
+        <ul>
+        <li>See the daily challenge progress at a glance on the home screen.</li>
+        <li>Get reminded of your daily challenges with notifications.</li>
+        </ul>
+    </div>
+
+
+
+    <h3 lang="en">Technology</h3>
+    <h4>App</h4>
+    <p lang="en">The iOS app is completely written in Swift and SwiftUI.</p>
+    <p lang="en">Most views and their components are heavily reusable. Components have static previews with all variations, while views have interactive previews to aid the maintenance and development. The app makes heavy use of environment values to propagate the subject color through the views.</p>
+    <p lang="en">The offline support is built with a conjunction of network connection monitoring, question caching and interface cues that help the user understand the app's decisions. We added a subtle notification when the connection is lost and when a reconnection happens, and added a status icon and explanation during the quiz sessions to keep the user informed.</p>
+    <p lang="en">The VoiceOver support on the quiz views was crafted with special care. I also scheduled two WWDC Accessibility labs to get guidance on a couple of implementations, and this was one of the situations I asked for feedback from Apple designers and engineers.</p>
+    <h4>Backend</h4>
+    <p lang="en">The backend is built Firebase. We use storage of documents and assets to store the questions and their images, and authentication compatible with Google services, e-mail and Sign In with Apple for the accounts.</p>
+
+
+    <h3 lang="en">Team</h3>
+    <ul lang="en">
+        <li><em>Alexya Reis</em> – Design</li>
+        <li><em>Gabriel Cantarin</em> – Design</li>
+        <li><em>Lara Pereira</em> – Psychology</li>
+        <li><em>Thalita Rangel</em> – Computer Science</li>
+        <li><em>Victor Martins</em> – Computer Science</li>
+    </ul>
+
+
+    <!-- <br> -->
+    <h4>iOS</h4>
+    <div class="screenshots">
+        <img src="./screenshots/atlas1.webp">
+        <img src="./screenshots/atlas2.webp">
+        <img src="./screenshots/atlas3.webp">
+        <img src="./screenshots/atlas4.webp">
+    </div>
+
+</article>
+</body>
+</html>
